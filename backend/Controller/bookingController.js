@@ -13,7 +13,7 @@ export const getCheckoutSession = async (req, res) => {
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'], // Fixed typo
             mode: 'payment',
-            success_url: `https://doctor-appointment-pecg.onrender.com/checkout-success,/checkout-success`, // Fixed typo
+            success_url: 'https://doctor-appointment-pecg.onrender.com/checkout-success', // Fixed typo
             cancel_url: `${req.protocol}://${req.get('host')}/doctors/${doctor.id}`,
             customer_email: user.email,
             client_reference_id: req.params.doctorId,
