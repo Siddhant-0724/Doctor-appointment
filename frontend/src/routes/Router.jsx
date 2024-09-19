@@ -7,7 +7,7 @@ import Doctor from '../pages/Doctor/Doctor';
 import Doctordetails from '../pages/Doctor/Doctordetails';
 import Myaccount from '../dashboard/user-account/Myaccount';
 import Mydashboard from '../dashboard/doctor-account/Mydashboard';
-import CheakoutSucess from '../pages/Doctor/CheakoutSucess.jsx';
+import CheakoutSucess from '../pages/Doctor/CheakoutSucess';
 import { Route, Routes } from 'react-router-dom';
 import ProtectedRoutes from './ProtectedRoutes.jsx';
 
